@@ -17,20 +17,23 @@
     table td {
         padding: 2 0 3px 3px;
         padding-left: 0;
+        vertical-align: top;
     }
     .text {
         padding: 1px;
         color: #616161;
         font-family: 'Trebuchet MS', Arial, sans-serif;
-        padding-bottom: 0;
+        padding-bottom: 1px;
         padding-left: 0;
     }
     .name {
         padding-top: 5px;
-        font-size: 14px;
+        font-size: 40px;           /* keep original ratio */
+        font-size: 14px;           /* actual size */
         font-weight: bold;
         float: left;
         color: #1b1c1e;
+        line-height: 1.05;
     }
     .desc, .desc-top {
         padding-top: 5px;
@@ -38,8 +41,9 @@
         padding-bottom: 5px;
     }
     .desc-top {
-        padding-top: 0;
+        padding-top: 2px;
         float: left;
+        line-height: 1.05;
     }
     .info {
         font-size: 8px;
@@ -67,16 +71,14 @@
 <body>
     <table>
         <tr>
-            <td>
+            <td style="width:45px;">
                 <img src="https://samorzad-wit.github.io/WRSS_PUBLIC_MEDIA/w4/wrss_footer_logo.png" alt="logo" width="35" height="35">
             </td>
-            <td>
-                <div class="text name">Imię Nazwisko</div><br>
-                <div class="text desc-top">
-                    Członek sekcji ds. (Nazwa sekcji)<br>                
-                </div>
+            <td style="vertical-align:top;">
+                <div class="text name">__NAME__</div><br>
+                <div style="clear:both;"></div>
+                <div class="text desc-top">__ROLE__</div>
             </td>
-            
         </tr>
         <tr>
             <td colspan="2">
@@ -88,7 +90,7 @@
                 <div class="text info">
                     <div class="icon-row">
                         <img class="icon" src="https://samorzad-wit.github.io/WRSS_PUBLIC_MEDIA/w4/phone_footer_logo.png" width="8" height="8">
-                        +48 (prywatny numer telefonu do osoby)
+                        __PHONE__
                     </div>
                     <div class="icon-row">
                         <img class="icon" src="https://samorzad-wit.github.io/WRSS_PUBLIC_MEDIA/w4/mail_footer_logo.png" width="8" height="8">
