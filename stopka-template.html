@@ -1,107 +1,77 @@
 <style> 
     * {margin: 0; padding: 0;}
-
-    body {
-        margin: 0;
-        padding: 0;
-    }
-    td img {
-        float: left;
-        padding-right: 10px;
-    }
+    body { margin: 0; padding: 0; }
+    
     table {
-        padding-left: 0;
-        margin-left: 0;
         border-spacing: 0;
-    }
-    table td {
-        padding: 2px 0 3px 3px;
-        padding-left: 0;
+        border-collapse: collapse;
     }
     .text {
-        padding: 1px;
         color: #616161;
         font-family: 'Trebuchet MS', Arial, sans-serif;
-        padding-bottom: 0;
-        padding-left: 0;
     }
     .name {
-        padding-top: 5px;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: bold;
-        float: left;
         color: #1b1c1e;
     }
-    .desc, .desc-top {
-        padding-top: 5px;
-        font-size: 10px;
-        padding-bottom: 5px;
-    }
-    .desc-top {
-        padding-top: 0;
-        float: left;
-    }
-    .info {
-        font-size: 8px;
+    .role {
+        font-size: 14px;
         color: #616161;
-        padding-bottom: 20px;
+        margin-top: 2px;
+    }
+    .desc {
+        font-size: 12px;
+        padding-top: 5px;
+        padding-bottom: 8px;
+    }
+    .info-row {
+        font-size: 11px;
+        color: #616161;
+        padding-bottom: 4px;
     }
     .icon {
-        width: 8px;
-        height: 8px;
-        padding-right: 3px;
-        padding-top: 1px;
-    }
-
-    .icon-row {
-        padding-top: 3px;
-        justify-content: center;
+        width: 12px;
+        height: 12px;
         vertical-align: middle;
+        margin-right: 5px;
     }
-
-    .icon-row:first-of-type {
-        padding-top: 0;
-    }
-
 </style>
 <body>
-    <table>
+    <table cellpadding="0" cellspacing="0" border="0">
         <tr>
-            <td>
-                <img src="https://samorzad-wit.github.io/WRSS_PUBLIC_MEDIA/w4/wrss_footer_logo.png" alt="logo" width="35" height="35">
-            </td>
-            <td>
-                <div class="text name">__NAME__</div><br>
-                <div class="text desc-top">
-                    __ROLE__<br>                
-                </div>
+            <td valign="middle" style="padding-right: 15px; width: 60px;">
+                <img src="https://samorzad-wit.github.io/WRSS_PUBLIC_MEDIA/w4/wrss_footer_logo.png" alt="logo" width="55" height="55" style="display: block; border: none;">
             </td>
             
+            <td valign="middle">
+                <div class="text name">__NAME__</div>
+                <div class="text role">__ROLE__</div>
+            </td>
         </tr>
         <tr>
-            <td colspan="2">
-                <hr>
+            <td colspan="2" style="padding-top: 10px;">
+                <hr style="border: none; border-top: 2px solid #616161; margin: 0 0 5px 0;">
                 <div class="text desc">
                     Samorząd Wydziału Informatyki i Telekomunikacji <br>
                     Politechniki Wrocławskiej
                 </div>
-                <div class="text info">
-                    <div class="icon-row">
-                        <img class="icon" src="https://samorzad-wit.github.io/WRSS_PUBLIC_MEDIA/w4/phone_footer_logo.png" width="8" height="8">
-                        __PHONE__
-                    </div>
-                    <div class="icon-row">
-                        <img class="icon" src="https://samorzad-wit.github.io/WRSS_PUBLIC_MEDIA/w4/mail_footer_logo.png" width="8" height="8">
-                        wit@samorzad.pwr.edu.pl<br>
-                    </div>
-                    <div class="icon-row"> 
-                        <img class="icon" src="https://samorzad-wit.github.io/WRSS_PUBLIC_MEDIA/w4/facebook_footer_logo.png" width="8" height="8">
-                        www.facebook.com/samorzad.wita<br>
-                    </div>
-                    <div class="icon-row">
-                        <img class="icon" src="https://samorzad-wit.github.io/WRSS_PUBLIC_MEDIA/w4/instagram_footer_logo.png" width="8" height="8">
-                        www.instagram.com/team_w4n/<br> 
-                    </div>
+                
+                <div class="text info-row">
+                    <img class="icon" src="https://samorzad-wit.github.io/WRSS_PUBLIC_MEDIA/w4/phone_footer_logo.png">
+                    <span style="vertical-align: middle;">__PHONE__</span>
+                </div>
+                <div class="text info-row">
+                    <img class="icon" src="https://samorzad-wit.github.io/WRSS_PUBLIC_MEDIA/w4/mail_footer_logo.png">
+                    <span style="vertical-align: middle;">wit@samorzad.pwr.edu.pl</span>
+                </div>
+                <div class="text info-row"> 
+                    <img class="icon" src="https://samorzad-wit.github.io/WRSS_PUBLIC_MEDIA/w4/facebook_footer_logo.png">
+                    <span style="vertical-align: middle;">www.facebook.com/samorzad.wita</span>
+                </div>
+                <div class="text info-row">
+                    <img class="icon" src="https://samorzad-wit.github.io/WRSS_PUBLIC_MEDIA/w4/instagram_footer_logo.png">
+                    <span style="vertical-align: middle;">www.instagram.com/team_w4n/</span>
                 </div>
             </td>
         </tr>
