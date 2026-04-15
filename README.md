@@ -5,6 +5,7 @@ Public media assets for **Samorząd Wydziału Informatyki i Telekomunikacji** (W
 Hosted on GitHub Pages at:  
 🔗 **[https://samorzad-wit.github.io/WRSS_PUBLIC_MEDIA/](https://samorzad-wit.github.io/WRSS_PUBLIC_MEDIA/)**
 
+
 ---
 
 ## 📁 Repository Structure
